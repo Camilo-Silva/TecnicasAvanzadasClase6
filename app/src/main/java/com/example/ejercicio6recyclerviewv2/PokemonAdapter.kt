@@ -35,8 +35,8 @@ class PokemonAdapter(val context: Context) : ListAdapter<Pokemon, PokemonAdapter
                 TipoPokemon.ELECTRICO -> R.drawable.electrico
                 TipoPokemon.LUCHA -> R.drawable.fighter
             }
-
             imagenTipo.setImageResource(image)
+
             Glide.with(context)
                 .load(pokemon.url)
                 .into(imagenPokemon)
